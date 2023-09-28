@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.child {
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  /* background-color: aqua; */
+}
+.child h1 {
+  padding: 1vw 1vw;
+}
+.child2 {
+  display: flex;
+  margin-right: 16vw;
+  gap: 4vw;
+}
+span {
+  color: red;
+  font-weight: 800;
+}
+.child2 h4 {
+  font-size: 1.3vw;
+  transition: all ease 0.5s;
+}
+.child2 h4:hover {
+  color: rgb(5, 95, 239);
+}
+.main2 {
+  width: 100%;
+  height: calc(100% - 13%);
+  /* background-color: rgb(192, 131, 39); */
+  display: flex;
+}
+.left {
+  width: 50%;
+  height: 100vh;
+  /* background-color: rgb(82, 147, 205); */
+  margin-top: 4vw;
+}
+.right {
+  width: 50%;
+  height: calc(100% - 0%);
+  /* background-color: rgb(92, 141, 183); */
+}
+.left h1 {
+  font-size: 5vw;
+  margin: 2vw 2vw;
+}
+.left p {
+  font-size: 1.6vw;
+  margin: 1vw 2vw;
+  margin-bottom: 2vw;
+}
+.btn {
+  padding: 0.5vw 2vw;
+  background-color: red;
+  margin: 2vw 2vw;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-top: 2vw;
+  font-size: 2vw;
+  color: white;
+}
+.icon {
+  margin: 2vw 2vw;
+  padding: 1v;
+  font-size: 3vw;
+  /* background-color: salmon; */
+  text-decoration: none;
+}
+.icon a {
+  font-size: 3vw;
+  text-decoration: none;
+}
+.right img {
+  max-width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin: 1vw 3vw;
+  border-radius: 50%;
+}
+
+/* about section */
+.main3 {
+  width: 100%;
+  height: 120vh;
+  /* background-color: aqua; */
+}
+.heading h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin: 2vw 1vw;
+}
+.heading p {
+  font-size: 2vw;
+  text-align: center;
+}
+.heading h1::after {
+  content: "";
+  width: 15%;
+  height: 2px;
+  background-color: red;
+  display: flex;
+  margin: 0 auto;
+}
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-img {
+  flex: 1;
+}
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all ease 3s;
+  border-radius: 50%;
+}
+.about-img img:hover {
+  box-shadow: 5px 5px 10px black;
+  transform: scale(0.9);
+}
+.about-content {
+  flex: 1;
+  margin: 4vw 4vw;
+  text-align: center;
+}
+.about-content p {
+  font-size: 1.4vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  transition: all ease 0.5s;
+}
+.btn:hover {
+  background-color: lightseagreen;
+}
+
+/* services section */
+.main4 {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(89, 91, 91);
+}
+.head {
+  width: 100%;
+  height: 80vh;
+}
+.title h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 1vw 1vw;
+  margin-bottom: 4.8vw;
+}
+
+.title h1::after {
+  content: "";
+  width: 16%;
+  height: 3px;
+  margin: auto;
+  display: block;
+  background-color: red;
+}
+.services {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  background-color: rgb(214, 207, 222);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.services p {
+  font-size: 1.3vw;
+}
+.services h2 {
+  font-size: 2.4vw;
+}
+.icon2 {
+  font-size: 2.5vw;
+  color: red;
+}
+.bt {
+  padding: 0.5vw 2vw;
+  background-color: red;
+  color: white;
+  margin-top: 1vw;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  font-size: 1.4vw;
+}
+.bt:hover {
+  background-color: rgb(0, 130, 251);
+}
+
+/* footer section styling */
+footer {
+  background: #111;
+  padding: 5px 10px;
+  color: #ebe6e6;
+  text-align: center;
+}
+footer span a {
+  color: rgb(255, 11, 11);
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+.a {
+  color: #fff7f7;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+.ri-menu-fold-fill {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .child2 h4 {
+    display: none;
+  }
+  .ri-admin-line {
+    display: none;
+  }
+  .ri-menu-fold-fill {
+    display: inline;
+    font-size: 12vw;
+    background-color: antiquewhite;
+    border-radius: 12px;
+  }
+  .child h1 {
+    font-size: 10vw;
+  }
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    margin: 6vw 24vw;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+  }
+  .left h1 {
+    font-size: 8vw;
+  }
+}
